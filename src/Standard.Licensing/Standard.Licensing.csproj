@@ -1,7 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net8.0;net6.0;netstandard2.0;netstandard1.3;netstandard1.0;net45;net40;</TargetFrameworks>
     <RootNamespace>Standard.Licensing</RootNamespace>
     <AssemblyName>Standard.Licensing</AssemblyName>
     <Authors>Junian Triajianto</Authors>
@@ -33,6 +32,7 @@
     <ReleaseVersion>$(AssemblyVersion)</ReleaseVersion>
     <Version>$(AssemblyVersion)</Version>
     <FileVersion>$(AssemblyVersion)</FileVersion>
+    <TargetFramework>net8.0</TargetFramework>
   </PropertyGroup>
 	
   <ItemGroup>

@@ -45,7 +45,8 @@ namespace Standard.Licensing.Security.Cryptography
         {
             var salt = new byte[16];
             var secureRandom = SecureRandom.GetInstance("SHA256PRNG");
-            secureRandom.SetSeed(SecureRandom.GetSeed(16)); //See Bug #135
+            var seed = new byte[32];
+            secureRandom.NextBytes(seed);
             secureRandom.NextBytes(salt);
 
             return
